@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- connect to css.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <title>Bootstrap Practice</title>
+</head>
+<body>
+
+    <!--Navbar Lesson in Boostrap-->
+    <div class="navbar navbar-expand-md bg-success navbar-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logo</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse flex-row justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">More Detail</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- table -->
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--Container in Boostrap-->
+    <p class="container">
+        Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your
+
+    </p>
+    
+    <!--Button in Boostrap-->
+    <div class="container">
+        <button class="btn bg-primary text-white">Send</button> 
+        <button class="btn btn-outline-success">Click</button>
+        <button class="btn bg-success text-white disabled">Login</button> <!--disable: make the buttton to be disable button-->
+    </div> </br>
+
+    <!--Group Button-->
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn bg-secondary text-white">Submit</button>
+            <button class="btn btn-outline-success">Link</button>
+            <button class="btn btn-outline-dark">Here</button>
+        </div>
+    </div>
+
+    <!--Alert in Bootstrap-->
+    <div class="container mt-2"> <!--mt-2 : magine = 2-->
+        <div class="alert alert-success">Login Seccess</div>
+        <div class="alert alert-warning">Not secure</div>
+        <div class="alert alert-danger">Failed to Login</div>
+    </div>
+
+    <!--Alert and Button-->
+    <div class="container mt-2"> <!--mt-2 : magine = 2-->
+            <div class="alert alert-success fade show alert-dismissible" role="alert-s">Login Seccess
+            <button class="btn btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+            </div>
+    </div>
+
+    <!--Card-->
+    <div class="container">
+        <div class="card w-100"> <!-- w-number: set length to the width of card -->
+            <div class="card-header">Header</div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="img-fluid" alt="Wild Landscape" />
+            <div class="card-body">
+                <div class="card-title">Title</div>
+                <div class="card-text">
+                    ### container Note: 
+                    # class contaniner: in bootstrap will resize the messy acticle to the tidy acticle.
+                      Moreover, when the viewport decrease the size the acticle will resize automatically. 
+                
+                        #### Navbar Note:
+                    # class navbar-expand: convert the list to content. 
+                    # class bg-... : add some color to the background. 
+                    # class active: to make the letter more clearify.
+                    # class bg-dark, navbar-dark: make a dark background and the white charater. 
+                    # there are many kin d of screen that we can use in boostrap like: 
+                    * md: use for ipad. 
+                    * xs: extra small. 
+                    * sm: for simple phone. 
+                    * lg: for computer screen or monitor. 
+                    * xl: for the large screen. 
+                    * xxl: for the biggest screen. 
+                    # navbar-expan-ms: will response when the we open the website in the ipad. 
+                
+                        ### Button Note: 
+                    # btn-group: make a group of the button. 
+                
+                        ### Alert Note: 
+                    
+                        ### Alert and Button: 
+                    # alert-dismissible: make the x (close button) to right side.   
+                </div>
+                <button class="btn bg-primary text-white">View More...</button>
+            </div>
+            <div class="card-footer">this is the footer of the acticle</div>
+            <img
+                src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+                class="img-fluid hover-shadow"
+                alt="Los Angeles Skyscrapers"
+            />
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="container mt-4">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Open Modal</button>
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header"><h1>This is modal !</h1></div>
+                    <div class="modal-body">        
+                            ### container Note: 
+                        # class contaniner: in bootstrap will resize the messy acticle to the tidy acticle.
+                          Moreover, when the viewport decrease the size the acticle will resize automatically. 
+                    
+                            #### Navbar Note:
+                        # class navbar-expand: convert the list to content. 
+                        # class bg-... : add some color to the background. 
+                        # class active: to make the letter more clearify.
+                        # class bg-dark, navbar-dark: make a dark background and the white charater. 
+                        # there are many kin d of screen that we can use in boostrap like: 
+                        * md: use for ipad. 
+                        * xs: extra small. 
+                        * sm: for simple phone. 
+                        * lg: for computer screen or monitor. 
+                        * xl: for the large screen. 
+                        * xxl: for the biggest screen. 
+                        # navbar-expan-ms: will response when the we open the website in the ipad. 
+                    
+                            ### Button Note: 
+                        # btn-group: make a group of the button. 
+                    
+                            ### Alert Note: 
+                        
+                            ### Alert and Button: 
+                        # alert-dismissible: make the x (close button) to right side.
+                    </div>
+                    <div class="modal-footer"><h1>This is footer !</h1></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Table-->
+    <div class="container mt-5 ">
+        <h2>Basic Table</h2>
+        <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="bg-secondary">
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Form -->
+      <div class="container mt-5">
+        <form action="">
+            <!-- email -->
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" placeholder="email" class="form-control form-control-lg"> 
+            <!-- password -->
+            <label for="password" class="form-label mt-2" >Password</label>
+            <input type="password" id="password" placeholder="password" class="form-control form-control-lg">
+            <button class="btn btn-success mt-4" >Login</button>
+            <!-- select -->
+            <select  name="gender" id="gender" class="form-select mt-2">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <select  name="country" id="country" class="form-select mt-2">
+                <option>Cambodia</option>
+                <option>Thailand</option>
+                <option>Vietnam</option>
+            </select>
+
+            <!-- checkform -->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="" class="form-label">Primary School</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="" class="form-label">Secondary School</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="" class="form-label">High School</label>
+            </div>
+
+            <!-- input group -->
+            <div class="input-group">
+                <div class="input-group-text">$$$</div>
+                <input type="text" class="form-control">
+                <input type="text" class="form-control">
+                <input type="text" class="form-control">
+                <button class="btn btn-primary text-white">+</button>
+            </div>
+
+            <!-- is-valid and is-invalid -->
+            <input type="text" id="test" class="form-control is-valid mt-2" placeholder="Email">
+            <input type="text" id="test" class="form-control is-invalid mt-2" placeholder="Password">
+            <div class="valid-feedback">Correct</div>
+            <div class="invalid-feedback">Incorrect</div>
+            <button class="btn btn-primary mt-2">Submit</button>
+        </form>
+      </div>
+
+      <!-- Greet: there are two main part in greet system: col and row, and there are six 12 col in a row, which mean that if we 
+    put the number of col-6 the length of that row will equal to the half of th elength of the all  col--> 
+      <div class="container">
+        <!-- the simple row  -->
+        <div class="row mt-4">
+            <div class="col-6" style="background-color: red;">Hello</div>  <!-- the length of this col is the half of all the col -->
+            <div class="col-3" style="background-color: greenyellow;">Hello</div>
+            <div class="col" style="background-color: blue;">Hello</div>
+            <div class="col" style="background-color: pink;">Hello</div>
+        </div>
+        <!-- set the row and col and responsive to the screen-->
+        <div class="row mt-4 row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6"> <!-- only one row one col-->
+            <div class="col" style="background-color: red;">Hello</div>  
+            <div class="col" style="background-color: greenyellow;">Hello</div>
+            <div class="col" style="background-color: blue;">Hello</div>
+            <div class="col" style="background-color: pink;">Hello</div>
+            <div class="col" style="background-color: blue;">Hello</div>
+            <div class="col" style="background-color: greenyellow;">Hello</div>
+        </div>
+      </div>
+
+      <!-- magine and padding  -->
+      <div class="container">
+        <div class="bg-success m-5 p-2 rounded-1 border border-danger shadow-lg">this is the practice of magine padding and rounded...</div>
+      </div>
+            
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+
+<!--
+        ### container Note: 
+    # class contaniner: in bootstrap will resize the messy acticle to the tidy acticle.
+      Moreover, when the viewport decrease the size the acticle will resize automatically. 
+
+        #### Navbar Note:
+    # class navbar-expand: convert the list to content. 
+    # class bg-... : add some color to the background. 
+    # class active: to make the letter more clearify.
+    # class bg-dark, navbar-dark: make a dark background and the white charater. 
+    # there are many kin d of screen that we can use in boostrap like: 
+    * md: use for ipad. 
+    * xs: extra small. 
+    * sm: for simple phone. 
+    * lg: for computer screen or monitor. 
+    * xl: for the large screen. 
+    * xxl: for the biggest screen. 
+    # navbar-expan-ms: will response when the we open the website in the ipad. 
+
+        ### Button Note: 
+    # btn-group: make a group of the button. 
+
+        ### Alert Note: 
+    
+        ### Alert and Button: 
+    # alert-dismissible: make the x (close button) to right side.
+
+
+-->
+</html>
